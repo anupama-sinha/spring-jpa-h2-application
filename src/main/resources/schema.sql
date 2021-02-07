@@ -1,0 +1,16 @@
+CREATE TABLE DEPARTMENT
+(
+   deptid NUMBER(10) NOT NULL,
+   deptName VARCHAR2(50) NOT NULL,
+   PRIMARY KEY(deptid)
+);
+
+CREATE TABLE EMPLOYEE
+(
+   empid NUMBER(10) NOT NULL,
+   empname VARCHAR2(50) NOT NULL,
+   deptid NUMBER(10),
+   PRIMARY KEY(empid),
+   FOREIGN KEY(deptid) REFERENCES DEPARTMENT(deptid)
+);
+

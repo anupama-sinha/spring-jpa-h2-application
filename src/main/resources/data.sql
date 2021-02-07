@@ -1,0 +1,5 @@
+INSERT INTO DEPARTMENT VALUES (11, 'Computer Science');
+
+INSERT INTO EMPLOYEE VALUES (1, 'Anupama Sinha',11);
+INSERT INTO EMPLOYEE VALUES (2, 'Barrack Obama',11);
+
